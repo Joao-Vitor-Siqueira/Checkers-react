@@ -85,22 +85,22 @@ function initBoard() {
 }
 
 const CLASSES = {
-  container: "flex items-center justify-center",
+  container: "grid items-center justify-items-center grid-cols-2 sm:max-lg:grid-cols-1 w-screen h-screen",
   boardClass: "grid grid-cols-8 gap-0 w-fit border-3 box-border shadow-2xl",
   whiteTile:
-    "flex items-center justify-center w-24 h-24 cursor-pointer object-contain bg-[url('/assets/whiteTile.png')]",
+    "flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 xl:w-18 xl:h-18 2xl:h-24 2xl:w-24 cursor-pointer object-contain bg-[url('/assets/whiteTile.png')]",
   blackTile:
-    "flex items-center justify-center w-24 h-24 transition duration-150 ease-in object-contain bg-[url('/assets/blackTile.png')]",
+    "flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 xl:w-18 xl:h-18 2xl:h-24 2xl:w-24 transition duration-150 ease-in object-contain bg-[url('/assets/blackTile.png')]",
   greenTile:
-    "flex items-center justify-center w-24 h-24 transition duration-150 ease-in cursor-pointer object-contain bg-[url('/assets/greenTile.png')]",
+    "flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 xl:w-18 xl:h-18 2xl:h-24 2xl:w-24 transition duration-150 ease-in cursor-pointer object-contain bg-[url('/assets/greenTile.png')]",
   redTile:
-    "flex items-center justify-center w-24 h-24 transition duration-150 ease-in cursor-pointer object-contain bg-[url('/assets/redTile.png')]",
+    "flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 xl:w-18 xl:h-18 2xl:h-24 2xl:w-24 transition duration-150 ease-in cursor-pointer object-contain bg-[url('/assets/redTile.png')]",
   darkRedTile:
-    "flex items-center justify-center w-24 h-24 transition duration-150 ease-in object-contain bg-[url('/assets/darkRedTile.png')]",
+    "flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 xl:w-18 xl:h-18 2xl:h-24 2xl:w-24 transition duration-150 ease-in object-contain bg-[url('/assets/darkRedTile.png')]",
   whitePiece:
-    "w-16 h-16 rounded-full cursor-pointer object-contain bg-[url('/assets/whitePiece.png')]  bg-cover bg-center bg-no-repeat",
+    "w-8 h-8 xl:w-12 xl:h-12 2xl:h-16 2xl:w-16 rounded-full cursor-pointer object-contain bg-[url('/assets/whitePiece.png')]  bg-cover bg-center bg-no-repeat",
   blackPiece:
-    "w-16 h-16 rounded-full cursor-pointer object-contain bg-[url('/assets/blackPiece.png')]  bg-cover bg-center bg-no-repeat",
+    "w-8 h-8 xl:w-12 xl:h-12 2xl:h-16 2xl:w-16 rounded-full cursor-pointer object-contain bg-[url('/assets/blackPiece.png')]  bg-cover bg-center bg-no-repeat",
   selected:
     " ring-4 ring-yellow-500 ring-offset-1 ring-offset-slate-50 dark:ring-offset-slate-900",
   hasCapture:
